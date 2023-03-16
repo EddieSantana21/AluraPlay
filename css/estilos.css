@@ -25,17 +25,27 @@ body {
 /* CABEÇALHO */
 
 .cabecalho__container {
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     height: 80px;
     width: 100%;
     padding: 0 25px;
+    align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 .logo__item {
+    
     background-image: url(../img/cabecalho/Logo.png);
     background-repeat: no-repeat;
     padding: 15px 65px;
     cursor: pointer;
+}
+
+.cabecalho__pesquisar__item{
+    display: none;
 }
 
 .pesquisar__input {
@@ -236,6 +246,8 @@ body {
 /* RODAPÉ */
 
 .rodape__container {
+    display: flex;
+    flex-flow: column wrap;
     width: 100%;
     height: 875px;
     color: var(--cinza-texto);
@@ -256,6 +268,9 @@ body {
         height: 100vh;
     }
 
+    .cabecalho__pesquisar__item{
+        display: block;
+    }
     /* ESTILOS DO MENU LATERAL */
 
     .menu__container {
@@ -295,6 +310,7 @@ body {
     .rodape__container {
         height: 420px;
         padding-left: 74px;
+        justify-content: space-between;
     }
 
 }
